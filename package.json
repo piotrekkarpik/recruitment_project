@@ -1,0 +1,50 @@
+{
+    "name": "outsourcify-html-starter",
+    "version": "1.0.0",
+    "author": "Outsourcify <benoit@outsourcify.net>",
+    "description": "Kit to start HTML pages",
+    "homepage": "http://outsourcify.net",
+    "private": true,
+    "license": "WTFPL",
+    "scripts": {
+        "start": "webpack-dev-server --mode development --open",
+        "build": "webpack --mode development",
+        "dist": "webpack --mode production",
+        "watch": "webpack --watch --mode development"
+    },
+    "engines": {
+        "node": ">= 0.12.0",
+        "npm": ">=2.1.5"
+    },
+    "dependencies": {
+        "jquery": "^3.6.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.19.1",
+        "@babel/plugin-proposal-object-rest-spread": "^7.18.9",
+        "@babel/preset-env": "^7.19.1",
+        "autoprefixer": "^9.8.8",
+        "babel-loader": "^8.2.5",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^5.1.2",
+        "css-loader": "^3.6.0",
+        "file-loader": "^4.3.0",
+        "html-beautify-webpack-plugin": "^1.0.5",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.2.0",
+        "img-loader": "^3.0.2",
+        "mini-css-extract-plugin": "^0.7.0",
+        "node-sass": "^4.14.1",
+        "optimize-css-assets-webpack-plugin": "^5.0.8",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^7.3.1",
+        "terser-webpack-plugin": "^1.4.5",
+        "url-loader": "^2.3.0",
+        "webpack": "^4.46.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.3"
+    },
+    "browserslist": [
+        "last 2 versions"
+    ]
+}

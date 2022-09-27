@@ -1,0 +1,52 @@
+#trip {
+  position: relative;
+  top: 140px;
+  .button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+  }
+  #graphic-elements {
+  background-image: url("https://saksonianaweekend.pl/rudawy_example/img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  margin-top: 20px;
+
+  div {
+    width: 20px;
+    display: block;
+    height: 20px;
+    position: absolute;
+
+    &.red {
+      background: $red;
+    }
+
+    &.grey {
+      background: $grey;
+    }
+
+    &.orange {
+      background: $orange;
+    }
+
+    &.blue {
+      background: $blue;
+    }
+  }
+}
+}
+
+
+@media (max-width: 425px) {
+  #trip .button {
+    flex-direction: column;
+    padding: 0px 15px;
+    button {
+      margin-bottom: 15px;
+    }
+  }
+}
